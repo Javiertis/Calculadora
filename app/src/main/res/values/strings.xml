@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="num_pad0">0</string>
+    <string name="num_pad1">1</string>
+    <string name="num_pad2">2</string>
+    <string name="num_pad3">3</string>
+    <string name="num_pad4">4</string>
+    <string name="num_pad5">5</string>
+    <string name="num_pad6">6</string>
+    <string name="num_pad7">7</string>
+    <string name="num_pad8">8</string>
+    <string name="num_pad9">9</string>
+    <string name="num_pad_punto">.</string>
+    <string name="num_pad_suma">+</string>
+    <string name="num_pad_resta">-</string>
+    <string name="num_pad_multiplicar">*</string>
+    <string name="num_pad_div">/</string>
+    <string name="num_pad_pow">^</string>
+    <string name="num_pad_igual">=</string>
+    <string name="num_pad_borrar_todo">CE</string>
+    <string name="num_pad_borrar">⌫</string>
+    <string name="num_pad_parentesis">( )</string>
+    <string name="num_pad_logn">ln</string>
+    <string name="num_pad_raiz">√</string>
+    <string name="num_pad_ans">Ans</string>
+</resources>

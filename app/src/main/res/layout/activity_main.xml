@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TableRow
+            android:id="@+id/fila_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/numpad_log"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_logn" />
+
+            <Button
+                android:id="@+id/numpad_raiz"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_raiz" />
+
+            <Button
+                android:id="@+id/numpad_ans"
+                style="@style/boton_calculadora"
+                android:layout_span="2"
+                android:text="@string/num_pad_ans" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/numpad_borrar_todo"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_borrar_todo" />
+
+            <Button
+                android:id="@+id/numpad_borrar"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_borrar" />
+
+            <Button
+                android:id="@+id/numpad_pow"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_pow" />
+
+            <Button
+                android:id="@+id/numpad_div"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_div" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/numpad_7"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad7"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/numpad_8"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad8" />
+
+            <Button
+                android:id="@+id/numpad_9"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad9" />
+
+            <Button
+                android:id="@+id/numpad_multiplicar"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_multiplicar" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/numpad_4"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad4" />
+
+            <Button
+                android:id="@+id/numpad_5"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad5" />
+
+            <Button
+                android:id="@+id/numpad_6"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad6" />
+
+            <Button
+                android:id="@+id/numpad_resta"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_resta" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/numpad_1"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad1" />
+
+            <Button
+                android:id="@+id/numpad_2"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad2" />
+
+            <Button
+                android:id="@+id/numpad_3"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad3" />
+
+            <Button
+                android:id="@+id/numpad_suma"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_suma" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/fila_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/numpad_parentesis"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_parentesis" />
+
+            <Button
+                android:id="@+id/numpad_0"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad0"
+                android:textSize="36sp" />
+
+
+            <Button
+                android:id="@+id/numpad_punto"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_punto" />
+
+            <Button
+                android:id="@+id/numpad_igual"
+                style="@style/boton_calculadora"
+                android:text="@string/num_pad_igual" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="monospace"
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/operacion"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:textAlignment="textEnd"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operacion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
