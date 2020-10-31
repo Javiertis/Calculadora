@@ -23,4 +23,6 @@
     <string name="num_pad_logn">ln</string>
     <string name="num_pad_raiz">√</string>
     <string name="num_pad_ans">Ans</string>
+    <string name="intfinito">Infinito</string>
+    <string name="not_a_number">NaN</string>
 </resources>

@@ -184,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
         resultado.setText("");
 
         registro = findViewById(R.id.spinner);
-        registro.setAdapter(new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, historial.values().toArray(new String[historial.size()])));
+        registro.setAdapter(new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, historial.values().toArray(new String[historial.size()])));
         registro.setOnItemSelectedListener(seleccionarCuenta);
     }
 
@@ -232,7 +232,7 @@ public class MainActivity extends AppCompatActivity {
                 parentesisCerrados++;
             }
         }
-        if (parentesisAbiertos == parentesisCerrados || cuenta.getText().toString().substring(txtLength - 1).equals("(")) {
+        if (parentesisAbiertos == parentesisCerrados || !cuenta.getText().toString().substring(txtLength - 1).matches("[0-9)]")) {
             escribir("(");
         } else {
             escribir(")");
@@ -254,17 +254,17 @@ public class MainActivity extends AppCompatActivity {
             resultadoAnterior = String.valueOf(new BigDecimal(res, MathContext.DECIMAL32));
             if (!historial.containsValue(String.format("%s=%s", cuentaActual, res))) {
                 historial.put(historial.size(), String.format("%s=%s", cuentaActual, res));
-                registro.setAdapter(new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, historial.values().toArray(new String[historial.size()])));
-                currentItem=historial.size() - 1;
+                registro.setAdapter(new ArrayAdapter<>(this, R.layout.support_simple_spinner_dropdown_item, historial.values().toArray(new String[historial.size()])));
+                currentItem = historial.size() - 1;
                 registro.setSelection(historial.size() - 1);
                 resultado.setText("");
                 cuenta.setText("");
                 cuentaActual = "";
             }
         } else if (Double.isInfinite(res)) {
-            resultado.setText("Infinito");
+            resultado.setText(R.string.intfinito);
         } else {
-            resultado.setText("NaN");
+            resultado.setText(R.string.not_a_number);
         }
     }
 
@@ -275,9 +275,9 @@ public class MainActivity extends AppCompatActivity {
         if (exp.checkSyntax() && !(Double.isInfinite(res) || Double.isNaN(res))) {
             resultado.setText(String.valueOf(new BigDecimal(res, MathContext.DECIMAL32)));
         } else if (Double.isInfinite(res)) {
-            resultado.setText("Infinito");
+            resultado.setText(R.string.intfinito);
         } else {
-            resultado.setText("NaN");
+            resultado.setText(R.string.not_a_number);
         }
     }
 
